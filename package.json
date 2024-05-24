@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "client": "cd frontend/notes-app && npm start",
+    "server": "cd new-task && npx nodemon src index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}
